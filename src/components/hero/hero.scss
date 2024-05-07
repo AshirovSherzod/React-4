@@ -1,0 +1,53 @@
+.hero {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 100px 0px;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+        p {
+            color: rgb(139, 142, 153);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            background: rgb(255, 255, 255);
+            padding: 5px;
+            .img {
+                font-size: 16px;
+                color: rgb(56, 88, 214);;
+            }
+            input {
+                font-size: 16px;
+                font-weight: 600;
+                border: none;
+                padding: 0px 16px;
+                outline: none;
+            }
+            button {
+                width: 112px;
+                height: 45px;
+                border: 1px solid transparent;
+                border-radius: 9px;
+                background: rgb(56, 88, 214);
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+}

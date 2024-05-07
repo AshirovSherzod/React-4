@@ -1,0 +1,39 @@
+.nav {
+    background: black;
+    padding: 30px;
+    &__middle__lists {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        color: rgb(139, 142, 153);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__icons {
+        
+        font-size: 24px;
+        color: white;
+    }
+}
+
+@media (max-width: 950px) {
+    .nav__middle {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav {
+        padding: 15px;
+    }
+    .nav__icons {
+        font-size: 16px;
+    }
+}
