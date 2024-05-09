@@ -51,3 +51,82 @@
         }
     }
 }
+
+@media (max-width: 1050px) {
+    .hero__right {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 50px 0px;
+        &__left {
+            gap: 20px;
+            h1 {
+                font-size: 46px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        &__left {
+            text-align: center;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .hero__left {
+        form {
+            input {
+                font-size: 14px;
+                width: 160px;
+                padding: 0px 6px;
+            }
+
+            button {
+                width: 80px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .hero {
+        &__left {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+            form {
+                justify-content: flex-start;
+                background: none;
+                input {
+                    display: none;
+                }
+    
+                button {
+                    width: 80px;
+                    height: 45px;
+                    font-size: 14px;
+                }
+
+                .img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
