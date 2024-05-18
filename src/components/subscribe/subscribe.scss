@@ -1,0 +1,40 @@
+.subscribe {
+    padding: 80px;
+    border-radius: 22px;
+    background: rgb(246, 246, 246);
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        form {
+            border-radius: 15px;
+            background: rgb(255, 255, 255);
+            padding: 10px;
+            input {
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 0px 10px;
+                
+            }
+            button {
+                width: 130px;
+                padding: 10px;
+                border: 1px solid transparent;
+                border-radius: 9px;
+                background: rgb(56, 88, 214);
+                color: white;
+            }
+        } 
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(139, 142, 153);
+        }
+    }
+}

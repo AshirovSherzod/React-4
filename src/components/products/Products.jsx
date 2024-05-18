@@ -5,7 +5,7 @@ import axios from '../../api'
 const Products = () => {
   const [products, setProducts] = useState(null)
   const [offset, setOffSet] = useState(1)
-  let perPageCount = 6
+  let perPageCount = 8
 
   useEffect(()=> {
     axios.get('/products', {
@@ -23,9 +23,8 @@ const Products = () => {
         <img src={el.images[0]} alt={el.title} />
       </div>
       <div className="products__card__desc">
-        <h1>{el.title}</h1>
+        <h1 className='line-clamp' title={el.title}>{el.title}</h1>
         <div className="products__card__cost">
-
         <p>price: ${el.price}</p>
         <p>rating: {el.rating}</p>
         </div>
